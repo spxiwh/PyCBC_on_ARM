@@ -28,7 +28,7 @@ export OPENBLAS="$(brew --prefix openblas)"
 
 Create, and activate, a blank venv
 
-``
+```
 DIRECTORY_OF_YOUR_CHOICE_FOR_THE_VENV=SET_THIS_WISELY
 VENV_NAME=ALSO_SET_THIS_WISELY
 cd ${DIRECTORY_OF_YOUR_CHOICE_FOR_THE_VENV}
