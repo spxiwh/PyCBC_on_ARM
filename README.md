@@ -57,6 +57,21 @@ pip install -r requirements.txt
 pip install -r companion.txt)
 ```
 
+## Running the test suite
+
+The normal process for running the PyCBC test suite is to use:
+
+```
+tox
+```
+
+However, this will not easily work as we will hit some of the same issues as below, we will not be able to install lalsuite, MKL should not be installed, and cpnest fails to install. It is possible to hack around these by removing them from setup.py and/or requirements.txt and/or companion.txt and/or tox.ini, but for now I would recommend using
+
+```
+pytest
+```
+
+to run the unit tests.
 
 
 ## Using homebrew and venv without conda (not recommended)
